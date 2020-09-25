@@ -59,7 +59,10 @@ class Game:
 
         def check_right(i: int, j: int) -> bool:
             for inc in range(1, Game.TO_CONNECT):
-                if j + inc >= self.columns or self.board[i][j] != self.board[i][j + inc]:
+                if (
+                        j + inc >= self.columns or
+                        self.board[i][j] != self.board[i][j + inc]
+                ):
                     return False
             return True
 
