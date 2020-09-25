@@ -8,8 +8,8 @@ class Game:
     TO_CONNECT = 4
 
     def __init__(self, x_length: int, y_length: int, players_signs: List[str]) -> None:
-        self.columns = y_length
-        self.rows = x_length
+        self.columns = x_length
+        self.rows = y_length
         self.board = [
             [Game.EMPTY_CELL for _ in range(x_length)]
             for _ in range(y_length)
