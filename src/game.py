@@ -22,6 +22,7 @@ class Game:
             for cell in line:
                 res += f'[{cell}]'
             res += '\n'
+        res += ''.join([f' {i} ' for i in range(self.columns)])
         return res
 
     def read_column(self, player_sign: str) -> int:
